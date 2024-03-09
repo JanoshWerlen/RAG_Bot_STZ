@@ -33,7 +33,7 @@
             font-weight: bold;
         }
 
-        input {
+        input, select {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
@@ -68,17 +68,29 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to my Flask App!</h1>
+    <h1>Werlen's Stadtspital QnA Bot _v0.1</h1>
+    <h2>keine Garantie auf Korrektheit der Aussagen</h2>
 
     <form action="{{ url_for('get_response_route') }}" method="post">
-        <label for="query">Enter your query:</label>
+        <label for="query">Frage hier stellen</label>
         <input type="text" id="query" name="query" required>
-        <button type="submit">Get Response</button>
+
+        <!-- Dropdown for choosing between "PR" and "KAR" -->
+        <label for="category">Kategorie auswählen:</label>
+        <select id="category" name="category">
+            <option value="Alle">Alle</option>
+            <option value="PR">PR</option>
+            <option value="KAR">KAR</option>
+        </select>
+
+        <button type="submit">Fragen</button>
     </form>
+
+    <a href="{{ url_for('show_logs') }}"><button>Zeige Log</button></a>
 
     {% if response %}
         <div class="response-container">
-            <h2>Response:</h2>
+            <h2>Antwort:</h2>
             <p>{{ response }}</p>
         </div>
     {% endif %}

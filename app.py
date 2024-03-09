@@ -10,11 +10,17 @@ def index():
 @app.route('/get_response', methods=['POST'])
 def get_response_route():
     query = request.form.get('query')
-    response = get_response(query)
-    return render_template('index.html', response=response)
+    category = request.form.get('category')
+    response = get_response(query, category)
+    return render_template('index.html', response=response, category=category)
 
 
+@app.route('/show_log')
+def show_logs():
+    with open('responses.txt', 'r', encoding='utf-8') as log_file:
+        log_content = log_file.readlines()
 
+    return render_template('log.html', log_content=log_content)
 
 
 if __name__ == '__main__':
