@@ -20,6 +20,8 @@ pdf_folderpath = "data"
 
 
 def initialise_AI():
+
+    global pdf_folderpath
     global chroma_db
     global chroma_db_PR
     global chroma_db_KAR
@@ -85,7 +87,7 @@ def create_log(timestamp, response):
 
     with open(response_file_path, "a", encoding="utf-8") as response_file:
         response_file.write(f"//{timestamp} \n" + "Frage: " +
-                            response["query"] + "\n" + response["result"] + "//" + "\n")
+                            response["query"] + "\n" + "Antwort: "+response["result"] + "\n")
 
     print("Response appended to", response_file_path)
 
@@ -97,6 +99,7 @@ def get_response(query: str, categorie):
     global chroma_db_KAR
     global llm
 
+ 
     if categorie == "Alle":
         print("Gewählte Ketegorie ALLE")
         chain = RetrievalQA.from_chain_type(

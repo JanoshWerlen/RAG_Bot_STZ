@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werlen's LOG's</title>
+    <title>HR Assistant Chat</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -18,8 +18,29 @@
             color: #007BFF;
         }
 
-        a {
-            text-decoration: none;
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
         }
 
         button {
@@ -30,13 +51,20 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
-            margin-top: 10px;
         }
 
         button:hover {
             background-color: #0056b3;
         }
 
+        .response-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .log-container {
             max-width: 600px;
             margin: 20px auto;
@@ -45,7 +73,6 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
         ul {
             list-style: none;
             padding: 0;
@@ -55,26 +82,30 @@
         li {
             margin-bottom: 5px;
         }
-
-        .hide {
-            display: none;
-        }
     </style>
 </head>
 <body>
-    <h1>Werlen's LOG's</h1>
-    
+    <h1>Chat with HR Assistant</h1>
     <a href="{{ url_for('index') }}"><button>Back</button></a>
+    <form action="/chat" method="post">
+        <label for="queryInput">Enter your query:</label><br>
+        <input type="text" id="queryInput" name="query"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Antowort:</h2>
+    <div id="responseArea">
+        {% if response %}
+            <p>{{ response }}</p>
+        {% endif %}
+    </div>
 
-    <div class="log-container" id="logContainer">
-        <h2>Log-Einträge:</h2>
+    <div class="log-container">
+        <h2>Log Entries:</h2>
         <ul>
             {% for line in log_content %}
                 <li>{{ line }}</li>
             {% endfor %}
         </ul>
     </div>
-
 </body>
 </html>
-
