@@ -8,7 +8,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def do_chat(query: str):
-    from bots_code.bots import get_response
+    from python_code.bots import get_response
     response_file_path = "responses.txt"
 
     # Implement logic to check if the file exists and handle file read/write errors
@@ -24,23 +24,22 @@ def do_chat(query: str):
     article_based = get_response(article_query, "Alle")
     artikel_itself = get_response(artikel_itself_query, "Alle")
 
-    #reduced_history = reduce_history(history)
+    # reduced_history = reduce_history(history)
 
-    print(f"\nArticle_Based: {article_based} \n" )
-    print(f"\nQuery: {query} \n" )
+    print(f"\nArticle_Based: {article_based} \n")
+    print(f"\nQuery: {query} \n")
     print(f"\nContext: {context} \n")
-   
-   
+
     print(f"\noriginal length {len(history)}\n")
-    #print(f"\nreduced length {len(reduced_history)}\n")
-    #print(f"\nreduced History {reduced_history}\n")
+    # print(f"\nreduced length {len(reduced_history)}\n")
+    # print(f"\nreduced History {reduced_history}\n")
 
     initial_query = f"Du bist ein HR Assistent und gibst Anworten auf Deutsch, basierend auf den Informationen: {context}"
-    
+
     print(f"Initial Query: {initial_query} \n")
     try:
         chat = openai.chat.completions.create(
-            model="gpt-3.5-turbo", 
+            model="gpt-3.5-turbo",
             messages=[
                 {
                     "role": "system",
@@ -65,10 +64,10 @@ def do_chat(query: str):
 
 
 def reduce_history(history):
-    
+
     try:
         chat = openai.chat.completions.create(
-            model="gpt-3.5-turbo", 
+            model="gpt-3.5-turbo",
             messages=[
                 {
                     "role": "system",
@@ -78,14 +77,14 @@ def reduce_history(history):
         )
         response = chat.choices[0].message.content
 
-        print(f"\nQuerry for Summarization: Summarize {history} but keep all information, use bulletpoints to summarize so it is understandabl\n")
+        print(
+            f"\nQuerry for Summarization: Summarize {history} but keep all information, use bulletpoints to summarize so it is understandabl\n")
         print(f"\nSummarization:{response}\n")
     except Exception as e:
         print(f"An error occurred: {e}")
         response = "Sorry, I couldn't process your request."
 
     return response
-
 
 
 def get_last_five_entries(response_file_path):
@@ -102,9 +101,8 @@ def get_last_five_entries(response_file_path):
     if len(entries) % 2 != 0:
         entries = entries[:-1]
 
-    last_five_entries = entries[-10:]  # Each pair has two lines (Frage and Antwort)
+    # Each pair has two lines (Frage and Antwort)
+    last_five_entries = entries[-10:]
 
-    
-    #print("\n".join(last_five_entries))
+    # print("\n".join(last_five_entries))
     return last_five_entries
-

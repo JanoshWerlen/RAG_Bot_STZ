@@ -62,7 +62,6 @@ def initialise_AI():
     print(f"KAR {len(chunks_KAR)}")
     print(f"PR {len(chunks_PR)}")
 
- 
     # Initialize the OpenAI chat model
     print("initialise_llm")
     llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.8)
@@ -82,13 +81,14 @@ def create_timestamp():
 
 
 def create_log(timestamp, response):
-    from bots_code.chat import reduce_history
+    from python_code.chat import reduce_history
 
-    #reduced_history = reduce_history(response)
+    # reduced_history = reduce_history(response)
 
     try:
         with open(response_file_path, "a", encoding="utf-8") as response_file:
-            response_file.write(f"//{timestamp} \n + {response['query']}\n + {response['result']}\n")
+            response_file.write(
+                f"//{timestamp} \n + {response['query']}\n + {response['result']}\n")
     except Exception as e:
         print(f"An error occurred while writing to the file: {e}")
 
@@ -102,8 +102,6 @@ def clear_log():
 
     print("Log-Datei geleert:", response_file_path)
 
-        
-
 
 def get_response(query: str, categorie):
 
@@ -112,46 +110,44 @@ def get_response(query: str, categorie):
     global chroma_db_KAR
     global llm
 
- 
     if categorie == "Alle":
         print("Gewählte Ketegorie ALLE")
         chain = RetrievalQA.from_chain_type(
-        llm=llm, chain_type="stuff", retriever=chroma_db.as_retriever())
+            llm=llm, chain_type="stuff", retriever=chroma_db.as_retriever())
         response = chain.invoke(query)
-        #print(response["result"])
+        # print(response["result"])
 
         formatted_date_time = create_timestamp()
 
         create_log(formatted_date_time, response)
 
         return response["result"]
-    
+
     elif categorie == "PR":
         print("Gewählte Ketegorie PR")
         chain = RetrievalQA.from_chain_type(
             llm=llm, chain_type="stuff", retriever=chroma_db_PR.as_retriever())
         response = chain.invoke(query)
-        #print(response["result"])
+        # print(response["result"])
 
         formatted_date_time = create_timestamp()
 
         create_log(formatted_date_time, response)
 
         return response["result"]
-    
+
     elif categorie == "KAR":
         print("Gewählte Ketegorie KAR")
         chain = RetrievalQA.from_chain_type(
             llm=llm, chain_type="stuff", retriever=chroma_db_KAR.as_retriever())
         response = chain.invoke(query)
-        #print(response["result"])
+        # print(response["result"])
 
         formatted_date_time = create_timestamp()
 
         create_log(formatted_date_time, response)
 
         return response["result"]
-
 
 
 def get_chroma_db(embeddings, name: str):
@@ -159,11 +155,14 @@ def get_chroma_db(embeddings, name: str):
     chroma_db = Chroma(persist_directory=name, embedding_function=embeddings)
     return chroma_db
 
+
 def create_chroma_db(chunks, embeddings, name: str):
     print(f"Creating new Chroma ({name}) with {len(chunks)}")
-    
-    chroma_db = Chroma.from_documents(chunks, embeddings, persist_directory=name)
+
+    chroma_db = Chroma.from_documents(
+        chunks, embeddings, persist_directory=name)
     return chroma_db
+
 
 def check_for_db(chunks, name: str):
     embeddings = OpenAIEmbeddings()
@@ -194,5 +193,3 @@ def check_for_db(chunks, name: str):
         return chroma_db_PR
     elif name == "chroma_db_KAR":
         return chroma_db_KAR
-
-
