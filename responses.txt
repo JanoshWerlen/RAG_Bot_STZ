@@ -1,12 +1,121 @@
-//10/03/2024 10:51 
-Frage: Ab wann beginnt die Nachtarbeit?
-Antwort: Die Nachtarbeit beginnt gemäß der Ausführungsbestimmungen zum Personalrecht zwischen 23:00 Uhr und 4:00 Uhr.
-Die Nachtarbeit beginnt gemäß der Ausführungsbestimmungen zum Personalrecht zwischen 23:00 Uhr und 4:00 Uhr.
-//10/03/2024 10:51 
-Frage: Dürfen Schwangere Mitarbeiterinnen Nachtarbeit leisten?
-Antwort: Nach den vorliegenden Bestimmungen dürfen schwangere Angestellte, die überwiegend Nacht- und Sonntagsdienst leisten, bei längeren Absenzen vom Schichtbetrieb aufgrund von Mutterschaftsurlaub, Krankheit und Unfall die Vergütungen für Nacht- und Sonntagsarbeit gemäß bestimmten Bedingungen weiter erhalten. Es ist wichtig, dass die Angestellte ein ärztliches Zeugnis vorlegt.
-Gemäß den vorliegenden Bestimmungen dürfen schwangere Mitarbeiterinnen, die überwiegend Nacht- und Sonntagsdienst leisten, bei längeren Absenzen vom Schichtbetrieb aufgrund von Mutterschaftsurlaub, Krankheit und Unfall die Vergütungen für Nacht- und Sonntagsarbeit unter bestimmten Bedingungen weiter erhalten. Es ist jedoch wichtig, dass die Angestellte ein ärztliches Zeugnis vorlegt.
-//10/03/2024 10:54 
-Frage: In welchen Funktionsstufen arbeiten normalerweise Pflegefachexperten?
-Antwort: Pflegefachexperten arbeiten normalerweise in den Funktionsstufen 8, 9 und 10.
-Normalerweise arbeiten Pflegefachexperten in den Funktionsstufen 8, 9 und 10.
+//10/03/2024 13:07 
+ + Dieses Dokument ist eine Richtlinie oder Ausführungsbestimmung zum Personalrecht. Es enthält Informationen darüber, was in Personalakten enthalten sein kann, wie Personalakten aufbewahrt werden müssen und Regeln zur Weitergabe von Personaldossiers innerhalb einer Organisation.
+//10/03/2024 13:07 
+ + Die Anfrage basiert auf dem Artikel 51 G. Datenschutz, genauer gesagt auf Absatz 2, der die verschiedenen Elemente definiert, die zu den Personalakten gehören.
+Dieses Dokument ist eine Richtlinie oder Ausführungsbestimmung zum Personalrecht. Es enthält Informationen darüber, was in Personalakten enthalten sein kann, wie Personalakten aufbewahrt werden müssen und Regeln zur Weitergabe von Personaldossiers innerhalb einer Organisation.
+//10/03/2024 13:11 
+ + {
+    'query': 'Wann bekomme ich Nachtzulagen?',
+    'result': 'Du erhältst Nachtzulagen, wenn du zwischen 20.00 Uhr und 6.00 Uhr Dauernachtdienste leistest. Die Vergütung beträgt Fr. 5.25 pro Stunde für diese Zeitspanne.'
+}
+//10/03/2024 13:11 
+ + Die folgende Anfrage basiert auf Artikel 107 Absatz 1, in dem es um die Zeitkompensation für Nachtdienst geht. Du erhältst Nachtzulagen, wenn du zwischen 20.00 Uhr und 6.00 Uhr Dauernachtdienste leistest. Die Vergütung beträgt Fr. 5.25 pro Stunde für diese Zeitspanne.
+<Article>
+Gemäß den Unternehmensrichtlinien erhältst du Nachtzulagen, wenn du zwischen 20.00 Uhr und 6.00 Uhr Dauernachtdienste leistest. Die Vergütung beträgt Fr. 5.25 pro Stunde für diese Zeitspanne.
+</Article>
+//10/03/2024 13:15 
+ + Mutterschaftsurlaub ist eine rechtlich geregelte Auszeit, die einer Frau vor und nach der Geburt eines Kindes gewährt wird. In diesem Zeitraum erhält die Frau normalerweise einen bezahlten Urlaub, um sich auf die Geburt vorzubereiten, sich zu erholen und sich um das Neugeborene zu kümmern.
+//10/03/2024 13:15 
+ + Die folgende Anfrage basiert auf Artikel 121 des Textes, der den Anspruch auf Mutterschaftsurlaub regelt.
+Mutterschaftsurlaub ist eine rechtlich geregelte Auszeit, die einer Frau vor und nach der Geburt eines Kindes gewährt wird. In diesem Zeitraum erhält die Frau normalerweise einen bezahlten Urlaub, um sich auf die Geburt vorzubereiten, sich zu erholen und sich um das Neugeborene zu kümmern.
+//10/03/2024 13:16 
+ + Sie bekommen Nachtzulagen, wenn Sie zwischen 20:00 Uhr und 6:00 Uhr arbeiten. Die Vergütung beträgt Fr. 5.25 je Stunde für Dauernachtdienste. Es gibt auch spezielle Zuschläge für bestimmte Personalgruppen, wie Vereinsabwartinnen und -abwarte, Badaufsichten usw.
+//10/03/2024 13:16 
+ + Die Anfrage basiert auf Artikel 176 des Personalrechts, speziell auf Absatz 2, der die Nachtzulagen und Vergütungen für Dauernachtdienste regelt. Zudem wird in Artikel 177 auf Zuschläge für bestimmte Personalgruppen, wie Vereinsabwartinnen und -abwarte, Badaufsichten usw., eingegangen.
+Gemäß Artikel 176 Absatz 2 des Personalrechts erhalten Sie Nachtzulagen, wenn Sie zwischen 20:00 Uhr und 6:00 Uhr arbeiten. Die Vergütung beträgt Fr. 5.25 je Stunde für Dauernachtdienste. Es gibt auch spezielle Zuschläge für bestimmte Personalgruppen, wie Vereinsabwartinnen und -abwarte, Badaufsichten usw., wie in Artikel 177 des Personalrechts festgelegt.
+//10/03/2024 13:21 
+ + Bei einem Tagespensum von mehr als sechs Stunden ist eine Pause von mindestens 30 Minuten einzuhalten. Diese Pause gilt jedoch nicht als Arbeitszeit. Es gibt auch die Option, je Halbtag, im Schichtdienst bei mehr als drei Stunden Arbeitszeit, eine Pause von 15 Minuten zu gewähren, die als Arbeitszeit zählt.
+//10/03/2024 13:21 
+ + Die Anfrage basiert auf Artikel 170 des Personalrechts. Dieser besagt, dass bei einem Tagespensum von mehr als sechs Stunden eine Pause von mindestens 30 Minuten einzuhalten ist. Diese Pause gilt jedoch nicht als Arbeitszeit. Es gibt auch die Option, je Halbtag, im Schichtdienst bei mehr als drei Stunden Arbeitszeit, eine Pause von 15 Minuten zu gewähren, die als Arbeitszeit zählt.
+Gemäß Artikel 170 des Personalrechts müssen Arbeitnehmer bei einem Tagespensum von mehr als sechs Stunden eine Pause von mindestens 30 Minuten einhalten. Diese Pause gilt jedoch nicht als Arbeitszeit. Alternativ besteht die Möglichkeit, je Halbtag im Schichtdienst bei mehr als drei Stunden Arbeitszeit eine Pause von 15 Minuten zu gewähren, die als Arbeitszeit zählt.
+//10/03/2024 13:28 
+ + Was ist Mutterschaftsurlaub?
+ + Mutterschaftsurlaub ist eine bezahlte Auszeit, die einer Angestellten gewährt wird, wenn sie schwanger ist und ein Kind erwartet. In diesem Fall hat die Angestellte Anspruch auf insgesamt 16 Kalenderwochen Mutterschaftsurlaub, den sie frühestens zwei Wochen vor dem ärztlich bestimmten Geburtstermin antreten kann. Es gibt auch Regelungen für den Fall, dass die Angestellte aufgrund von schwangerschaftsbedingten Beschwerden früher als zwei Wochen vor der Geburt nicht mehr arbeiten kann.
+//10/03/2024 13:28 
+ + Auf welchem Artikel basiert folgende Anfrage?: + Mutterschaftsurlaub ist eine bezahlte Auszeit, die einer Angestellten gewährt wird, wenn sie schwanger ist und ein Kind erwartet. In diesem Fall hat die Angestellte Anspruch auf insgesamt 16 Kalenderwochen Mutterschaftsurlaub, den sie frühestens zwei Wochen vor dem ärztlich bestimmten Geburtstermin antreten kann. Es gibt auch Regelungen für den Fall, dass die Angestellte aufgrund von schwangerschaftsbedingten Beschwerden früher als zwei Wochen vor der Geburt nicht mehr arbeiten kann.
+ + Die folgende Anfrage basiert auf Artikel 121 des Ausführungsbestimmungen zum Personalrecht, der den Anspruch auf Mutterschaftsurlaub regelt.
+Mutterschaftsurlaub ist eine bezahlte Auszeit, die einer Angestellten gewährt wird, wenn sie schwanger ist und ein Kind erwartet. Gemäß Artikel 121 der Ausführungsbestimmungen zum Personalrecht hat die Angestellte Anspruch auf insgesamt 16 Kalenderwochen Mutterschaftsurlaub, den sie frühestens zwei Wochen vor dem ärztlich bestimmten Geburtstermin antreten kann. Es gibt auch Regelungen für den Fall, dass die Angestellte aufgrund von schwangerschaftsbedingten Beschwerden früher als zwei Wochen vor der Geburt nicht mehr arbeiten kann.
+//10/03/2024 13:31 
+ + Wann bekomme ich Nachtzulagen?
+ + Sie erhalten Nachtzulagen, wenn Sie zwischen 20.00 Uhr und 6.00 Uhr Nachtdienste leisten. Die Vergütung beträgt Fr. 5.25 pro Stunde für diese Stunden. Es gibt auch spezielle Abweichungen und Zuschläge für bestimmte Personengruppen je nach den spezifischen Arbeitsbedingungen.
+//10/03/2024 13:31 
+ + Auf welchem Artikel basiert folgende Anfrage?: + Sie erhalten Nachtzulagen, wenn Sie zwischen 20.00 Uhr und 6.00 Uhr Nachtdienste leisten. Die Vergütung beträgt Fr. 5.25 pro Stunde für diese Stunden. Es gibt auch spezielle Abweichungen und Zuschläge für bestimmte Personengruppen je nach den spezifischen Arbeitsbedingungen.. Git em Ende nur den Artikel im Format 'Artikel XYZ' an.
+ + Artikel 176
+Sie erhalten Nachtzulagen, wenn Sie zwischen 20.00 Uhr und 6.00 Uhr Nachtdienste leisten. Die Vergütung beträgt Fr. 5.25 pro Stunde für diese Stunden. Es gibt auch spezielle Abweichungen und Zuschläge für bestimmte Personengruppen je nach den spezifischen Arbeitsbedingungen. Gemäß Artikel 176 des Arbeitsgesetzes haben Arbeitnehmer Anspruch auf Nachtzulagen, wenn sie in diesem Zeitraum arbeiten.
+//10/03/2024 13:37 
+ + Wie lange muss ich Mittagspause machen?
+ + Wenn Sie ein Tagespensum von mehr als sechs Stunden haben, müssen Sie mindestens 30 Minuten Pause machen. Diese Pause gilt jedoch nicht als Arbeitszeit.
+//10/03/2024 13:37 
+ + Auf welchem Artikel basiert folgende Anfrage?: + Wenn Sie ein Tagespensum von mehr als sechs Stunden haben, müssen Sie mindestens 30 Minuten Pause machen. Diese Pause gilt jedoch nicht als Arbeitszeit.. 
+ + Die Anfrage basiert auf Artikel 170 aus den Ausführungsbestimmungen zum Personalrecht, der sich mit Pausenregelungen befasst.
+Gemäß Artikel 170 der Ausführungsbestimmungen zum Personalrecht müssen Sie, wenn Sie ein Tagespensum von mehr als sechs Stunden haben, mindestens 30 Minuten Pause machen. Diese Pause gilt jedoch nicht als Arbeitszeit.
+//10/03/2024 13:39 
+ + Altersrücktritt
+ + Der Altersrücktritt ist eine Möglichkeit für Beschäftigte, zwischen dem vollendeten 58. und dem vollendeten 65. Lebensjahr auf jedes Monatsende frei zu wählen. Es kann auch gestaffelt erfolgen, mit mindestens drei Reduktionsstufen von jeweils mindestens 20 Prozent der Normalarbeitszeit. Der verbleibende Beschäftigungsgrad muss dabei mindestens 20 Prozent betragen. Die Modalitäten richten sich nach den Rechtsgrundlagen der Pensionskasse. Die Anstellungsinstanz verfügt den Altersrücktritt oder die Reduktion des Beschäftigungsgrades auf Monatsende.
+//10/03/2024 13:39 
+ + Auf welchem Artikel basiert folgende Anfrage?: + Der Altersrücktritt ist eine Möglichkeit für Beschäftigte, zwischen dem vollendeten 58. und dem vollendeten 65. Lebensjahr auf jedes Monatsende frei zu wählen. Es kann auch gestaffelt erfolgen, mit mindestens drei Reduktionsstufen von jeweils mindestens 20 Prozent der Normalarbeitszeit. Der verbleibende Beschäftigungsgrad muss dabei mindestens 20 Prozent betragen. Die Modalitäten richten sich nach den Rechtsgrundlagen der Pensionskasse. Die Anstellungsinstanz verfügt den Altersrücktritt oder die Reduktion des Beschäftigungsgrades auf Monatsende.. 
+ + Die Anfrage basiert auf Artikel 24 des Personalrechts.
+Der Altersrücktritt ist eine Möglichkeit für Beschäftigte, zwischen dem vollendeten 58. und dem vollendeten 65. Lebensjahr auf jedes Monatsende frei zu wählen. Es kann auch gestaffelt erfolgen, mit mindestens drei Reduktionsstufen von jeweils mindestens 20 Prozent der Normalarbeitszeit. Der verbleibende Beschäftigungsgrad muss dabei mindestens 20 Prozent betragen. Die Modalitäten richten sich nach den Rechtsgrundlagen der Pensionskasse. Die Anstellungsinstanz verfügt den Altersrücktritt oder die Reduktion des Beschäftigungsgrades auf Monatsende. Die Anfrage basiert auf Artikel 24 des Personalrechts.
+//10/03/2024 13:42 
+ + Was ist Mutterschaftsurlaub?
+ + Mutterschaftsurlaub ist ein bezahlter Urlaub, auf den eine Angestellte Anspruch hat, wenn sie schwanger ist. In der Regel beträgt die Dauer des Mutterschaftsurlaubs insgesamt 16 Kalenderwochen. Die Angestellte kann den Mutterschaftsurlaub frühestens zwei Wochen vor dem ärztlich festgelegten Geburtstermin antreten. Während dieser Zeit besteht Kündigungsschutz, und es können auch weitere Regelungen wie Reduzierung des Beschäftigungsgrades nach dem Mutterschaftsurlaub in Anspruch genommen werden.
+//10/03/2024 13:42 
+ + Auf welchem Artikel basiert folgende Anfrage?: + Mutterschaftsurlaub ist ein bezahlter Urlaub, auf den eine Angestellte Anspruch hat, wenn sie schwanger ist. In der Regel beträgt die Dauer des Mutterschaftsurlaubs insgesamt 16 Kalenderwochen. Die Angestellte kann den Mutterschaftsurlaub frühestens zwei Wochen vor dem ärztlich festgelegten Geburtstermin antreten. Während dieser Zeit besteht Kündigungsschutz, und es können auch weitere Regelungen wie Reduzierung des Beschäftigungsgrades nach dem Mutterschaftsurlaub in Anspruch genommen werden.. 
+ + Die Anfrage basiert auf Artikel 121 des Ausführungsbestimmungen zum Personalrecht.
+//10/03/2024 13:42 
+ + Gib nur den Artikel im Format 'Artikel XYZ'an aus dem Text: Auf welchem Artikel basiert folgende Anfrage?: + Mutterschaftsurlaub ist ein bezahlter Urlaub, auf den eine Angestellte Anspruch hat, wenn sie schwanger ist. In der Regel beträgt die Dauer des Mutterschaftsurlaubs insgesamt 16 Kalenderwochen. Die Angestellte kann den Mutterschaftsurlaub frühestens zwei Wochen vor dem ärztlich festgelegten Geburtstermin antreten. Während dieser Zeit besteht Kündigungsschutz, und es können auch weitere Regelungen wie Reduzierung des Beschäftigungsgrades nach dem Mutterschaftsurlaub in Anspruch genommen werden.. 
+ + Artikel 121
+Mutterschaftsurlaub ist ein bezahlter Urlaub, auf den eine Angestellte Anspruch hat, wenn sie schwanger ist. Die Dauer des Mutterschaftsurlaubs beträgt in der Regel insgesamt 16 Kalenderwochen. Die Angestellte kann den Mutterschaftsurlaub frühestens zwei Wochen vor dem ärztlich festgelegten Geburtstermin antreten. Während dieser Zeit besteht Kündigungsschutz, und es können auch weitere Regelungen wie die Reduzierung des Beschäftigungsgrades nach dem Mutterschaftsurlaub in Anspruch genommen werden. Die Anfrage basiert auf Artikel 121 des Ausführungsbestimmungen zum Personalrecht.
+//10/03/2024 13:45 
+ + Wann erhalte ich Sonntagszulagen?
+ + Sonntagszulagen werden zwischen 6.00 Uhr und 20.00 Uhr ausgezahlt. Es gibt keine zusätzliche Vergütung an Sonntagen, die als Feiertage gelten.
+//10/03/2024 13:45 
+ + Auf welchem Artikel basiert folgende Anfrage?: + Sonntagszulagen werden zwischen 6.00 Uhr und 20.00 Uhr ausgezahlt. Es gibt keine zusätzliche Vergütung an Sonntagen, die als Feiertage gelten.. 
+ + Die Anfrage basiert auf Artikel 176 Absatz 1 und 2, sowie Artikel 177 des Personalrechts.
+//10/03/2024 13:45 
+ + Gib nur den Artikel und der dazugehörige Ursprung im Format 'Artikel XYZ aus XYZ'an aus dem Text: Auf welchem Artikel basiert folgende Anfrage?: + Sonntagszulagen werden zwischen 6.00 Uhr und 20.00 Uhr ausgezahlt. Es gibt keine zusätzliche Vergütung an Sonntagen, die als Feiertage gelten.. 
+ + Artikel 177 aus Ausführungsbestimmungen zum Personalrecht
+Sonntagszulagen werden zwischen 6.00 Uhr und 20.00 Uhr ausgezahlt. Es gibt keine zusätzliche Vergütung an Sonntagen, die als Feiertage gelten. Die Regelung zu Sonntagszulagen basiert auf Artikel 176 Absatz 1 und 2, sowie Artikel 177 des Personalrechts.
+//10/03/2024 13:45 
+ + Altersrücktritt
+ + Der Altersrücktritt kann zwischen dem vollendeten 58. und dem vollendeten 65. Altersjahr auf jedes Monatsende frei gewählt werden. Es kann gestaffelt erfolgen, in höchstens drei Reduktionsschritten von je mindestens 20 Prozent der Normalarbeitszeit. Der verbleibende Beschäftigungsgrad muss mindestens 20 Prozent betragen. Die Modalitäten richten sich nach den Rechtsgrundlagen der Pensionskasse.
+//10/03/2024 13:45 
+ + Auf welchem Artikel basiert folgende Anfrage?: + Der Altersrücktritt kann zwischen dem vollendeten 58. und dem vollendeten 65. Altersjahr auf jedes Monatsende frei gewählt werden. Es kann gestaffelt erfolgen, in höchstens drei Reduktionsschritten von je mindestens 20 Prozent der Normalarbeitszeit. Der verbleibende Beschäftigungsgrad muss mindestens 20 Prozent betragen. Die Modalitäten richten sich nach den Rechtsgrundlagen der Pensionskasse.. 
+ + Die Anfrage, die du zitiert hast, basiert auf Artikel 24 des Personalrechts.
+//10/03/2024 13:46 
+ + Gib alle relevanten Artikel und die dazugehörigen Ursprünge im Format 'Artikel XYZ aus XYZ'an aus dem Text: Auf welchem Artikel basiert folgende Anfrage?: + Der Altersrücktritt kann zwischen dem vollendeten 58. und dem vollendeten 65. Altersjahr auf jedes Monatsende frei gewählt werden. Es kann gestaffelt erfolgen, in höchstens drei Reduktionsschritten von je mindestens 20 Prozent der Normalarbeitszeit. Der verbleibende Beschäftigungsgrad muss mindestens 20 Prozent betragen. Die Modalitäten richten sich nach den Rechtsgrundlagen der Pensionskasse.. 
+ + Artikel 35 aus Ausführungsbestimmungen zum Personalrecht
+Der Altersrücktritt kann zwischen dem vollendeten 58. und dem vollendeten 65. Altersjahr auf jedes Monatsende frei gewählt werden. Es kann gestaffelt erfolgen, in höchstens drei Reduktionsschritten von je mindestens 20 Prozent der Normalarbeitszeit. Der verbleibende Beschäftigungsgrad muss mindestens 20 Prozent betragen. Die Modalitäten richten sich nach den Rechtsgrundlagen der Pensionskasse. Die Anfrage basiert auf Artikel 24 des Personalrechts.
+//10/03/2024 13:47 
+ + Wie viele Tage Ferien habe ich im Jahr?
+ + Um deinen Ferienanspruch im Jahr zu berechnen, müsste man wissen, wie viele Arbeitstage du pro Woche leistest und ob du sonstige Ansprüche hast, die deinen Ferienanspruch beeinflussen könnten. Der genaue Ferienanspruch hängt von verschiedenen Faktoren ab, wie z.B. Alter, Betreuung von pflegebedürftigen Angehörigen, Schichtdienst usw. Wenn du mehr Informationen dazu hast, könnte man dir eine genaue Berechnung geben.
+//10/03/2024 13:47 
+ + Auf welchem Artikel basiert folgende Anfrage?: + Um deinen Ferienanspruch im Jahr zu berechnen, müsste man wissen, wie viele Arbeitstage du pro Woche leistest und ob du sonstige Ansprüche hast, die deinen Ferienanspruch beeinflussen könnten. Der genaue Ferienanspruch hängt von verschiedenen Faktoren ab, wie z.B. Alter, Betreuung von pflegebedürftigen Angehörigen, Schichtdienst usw. Wenn du mehr Informationen dazu hast, könnte man dir eine genaue Berechnung geben.. 
+ + Die Anfrage basiert auf Art. 113, Art. 114, Art. 115 und Art. 116 aus den Ausführungsbestimmungen zum Personalrecht.
+//10/03/2024 13:47 
+ + Gib alle relevanten Artikel und die dazugehörigen Ursprünge im Format 'Artikel XYZ aus XYZ'an aus dem Text: Auf welchem Artikel basiert folgende Anfrage?: + Um deinen Ferienanspruch im Jahr zu berechnen, müsste man wissen, wie viele Arbeitstage du pro Woche leistest und ob du sonstige Ansprüche hast, die deinen Ferienanspruch beeinflussen könnten. Der genaue Ferienanspruch hängt von verschiedenen Faktoren ab, wie z.B. Alter, Betreuung von pflegebedürftigen Angehörigen, Schichtdienst usw. Wenn du mehr Informationen dazu hast, könnte man dir eine genaue Berechnung geben.. 
+ + Artikel 117 aus Ausführungsbestimmungen zum Personalrecht
+Um deinen genauen Ferienanspruch im Jahr zu berechnen, müsste ich mehr Informationen haben. Unter anderem ist wichtig zu wissen, wie viele Arbeitstage du pro Woche leistest und ob du weitere Ansprüche hast, die deinen Ferienanspruch beeinflussen könnten. Es gibt verschiedene Faktoren, die deinen Ferienanspruch beeinflussen können, wie z.B. Alter, Betreuung von pflegebedürftigen Angehörigen, Schichtdienst usw. Wenn du mir mehr Informationen geben könntest, wäre es möglich eine genaue Berechnung durchzuführen.
+//10/03/2024 13:53 
+ + 
+ + I'm sorry, but I don't have enough context to provide an accurate answer.
+//10/03/2024 13:53 
+ + Auf welchem Artikel basiert folgende Anfrage?: + I'm sorry, but I don't have enough context to provide an accurate answer.. 
+ + I'm sorry, but I don't have enough context to provide an accurate answer.
+//10/03/2024 13:53 
+ + Gib alle relevanten Artikel und die dazugehörigen Ursprünge im Format 'Artikel XYZ aus XYZ'an aus dem Text: Auf welchem Artikel basiert folgende Anfrage?: + I'm sorry, but I don't have enough context to provide an accurate answer.. 
+ + Auf welchem Artikel basiert folgende Anfrage?: 
+- Artikel 42 aus XXIII
+- Artikel 50 aus XXIII
+- Artikel 48 aus XXIII
+Wie kann ich dir helfen?
+//10/03/2024 13:58 
+ + Was ist das KAR?
+ + Das KAR steht für Kaderärztinnen- und -ärztereglement. Es ist ein Reglement über die Anstellungsverhältnisse von leitenden Ärztinnen und Ärzten in den Stadtspitälern Waid und Triemli.
+//10/03/2024 13:58 
+ + Auf welchem Artikel basiert folgende Anfrage?: + Das KAR steht für Kaderärztinnen- und -ärztereglement. Es ist ein Reglement über die Anstellungsverhältnisse von leitenden Ärztinnen und Ärzten in den Stadtspitälern Waid und Triemli.. 
+ + Die folgende Anfrage basiert auf Artikel 1 des Reglements über die Anstellungsverhältnisse von leitenden Ärztinnen und Ärzten in den Stadtspitälern Waid und Triemli (Kaderärztinnen- und -ärztereglement, KAR).
+//10/03/2024 13:58 
+ + Gib alle relevanten Artikel und die dazugehörigen Ursprünge im Format 'Artikel XYZ aus XYZ'an aus dem Text: Auf welchem Artikel basiert folgende Anfrage?: + Das KAR steht für Kaderärztinnen- und -ärztereglement. Es ist ein Reglement über die Anstellungsverhältnisse von leitenden Ärztinnen und Ärzten in den Stadtspitälern Waid und Triemli.. 
+ + Artikel 1 Geltungsbereich aus KAR
+Das KAR steht für Kaderärztinnen- und -ärztereglement. Es regelt die Anstellungsverhältnisse von leitenden Ärztinnen und Ärzten in den Stadtspitälern Waid und Triemli.

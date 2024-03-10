@@ -1,11 +1,14 @@
+import os
+from dotenv import load_dotenv
 import openai
-from bots_code.bots import get_response
 
-openai.api_key = "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"
 
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def do_chat(query: str):
+    from bots_code.bots import get_response
     response_file_path = "responses.txt"
 
     # Implement logic to check if the file exists and handle file read/write errors
@@ -14,17 +17,34 @@ def do_chat(query: str):
     history = "\n".join(last_five)  # Join everything into a single string
 
     context = get_response(query, "Alle")
-    print(f"Query: {query} \n" )
-    print(f"Context: {context} \n")
-    print(f"History: {history} \n")
 
+    article_query = f"Auf welchem Artikel basiert folgende Anfrage?: + {context}. "
+    artikel_itself_query = f"Gib alle relevanten Artikel und die dazugehörigen Ursprünge im Format 'Artikel XYZ aus XYZ'an aus dem Text: {article_query}"
+
+    article_based = get_response(article_query, "Alle")
+    artikel_itself = get_response(artikel_itself_query, "Alle")
+
+    #reduced_history = reduce_history(history)
+
+    print(f"\nArticle_Based: {article_based} \n" )
+    print(f"\nQuery: {query} \n" )
+    print(f"\nContext: {context} \n")
+   
+   
+    print(f"\noriginal length {len(history)}\n")
+    #print(f"\nreduced length {len(reduced_history)}\n")
+    #print(f"\nreduced History {reduced_history}\n")
+
+    initial_query = f"Du bist ein HR Assistent und gibst Anworten auf Deutsch, basierend auf den Informationen: {context}"
+    
+    print(f"Initial Query: {initial_query} \n")
     try:
         chat = openai.chat.completions.create(
             model="gpt-3.5-turbo", 
             messages=[
                 {
                     "role": "system",
-                    "content": f"You are a HR assistant and base your answers this chat history: {history}, and if nessesary take this context into account: {context} "
+                    "content": f"{initial_query}"
                 },
                 {
                     "role": "user",
@@ -34,7 +54,32 @@ def do_chat(query: str):
         )
         response = chat.choices[0].message.content
         content = chat.choices[0].message.content
-        print(f"Response: {response}")
+        print(f"\nResponse: {response}\n")
+    except Exception as e:
+        print(f"\nAn error occurred: {e}\n")
+        response = "Sorry, I couldn't process your request."
+
+    print(f"\nInitial Quarry Length: {len(initial_query)}\n")
+    print(f"\Response Length: {len(response)}\n")
+    return response, artikel_itself
+
+
+def reduce_history(history):
+    
+    try:
+        chat = openai.chat.completions.create(
+            model="gpt-3.5-turbo", 
+            messages=[
+                {
+                    "role": "system",
+                    "content": f"Fasse folgendes zusammen: {history}, sorge dafür das alle Informationen und die Struktur bestehen bleibt"
+                },
+            ]
+        )
+        response = chat.choices[0].message.content
+
+        print(f"\nQuerry for Summarization: Summarize {history} but keep all information, use bulletpoints to summarize so it is understandabl\n")
+        print(f"\nSummarization:{response}\n")
     except Exception as e:
         print(f"An error occurred: {e}")
         response = "Sorry, I couldn't process your request."

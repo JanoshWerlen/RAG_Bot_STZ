@@ -33,18 +33,19 @@ def get_log_content():
 @app.route('/chat', methods=['GET', 'POST'])
 def chat():
     log_content = get_log_content()
+    artikel = ""
     
     if request.method == 'POST':
         query = request.form.get('query')
-        response = do_chat(query)
+        response, artikel = do_chat(query)
         
         # Append the new response to the log file
         with open('responses.txt', 'a', encoding='utf-8') as log_file:
             log_file.write(response + '\n')
 
-        return render_template('chat.html', response=response, log_content=log_content)
+        return render_template('chat.html', response=response, log_content=log_content, artikel = artikel)
     else:
-        return render_template('chat.html', response="", log_content=log_content)
+        return render_template('chat.html', response="", log_content=log_content, artikel = artikel)
 
 
 

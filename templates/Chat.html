@@ -19,7 +19,7 @@
         }
 
         form {
-            max-width: 400px;
+            max-width: 600px;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
@@ -72,7 +72,10 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+            overflow: auto; /* Makes the container scrollable */
+            max-height: 200px; /* Adjust this value as needed */
+}
+
         ul {
             list-style: none;
             padding: 0;
@@ -85,27 +88,35 @@
     </style>
 </head>
 <body>
-    <h1>Chat with HR Assistant</h1>
-    <a href="{{ url_for('index') }}"><button>Back</button></a>
+    <h1>Werlen's Stadtspital QnA Bot _v0.1_Chat_Bot</h1>
+    <h2>keine Garantie auf Korrektheit der Aussagen</h2>
+    <a href="{{ url_for('index') }}"><button>Zurück</button></a>
     <form action="/chat" method="post">
-        <label for="queryInput">Enter your query:</label><br>
-        <input type="text" id="queryInput" name="query"><br>
-        <input type="submit" value="Submit">
+        <label for="queryInput">Stelle hier deine Frage zum Personalrecht oder KAR</label><br>
+        <input type="text" id="queryInput" name="query" required><br>
+        <input type="submit" value="Eingabe">
     </form>
-    <h2>Antowort:</h2>
+    <h2>Antworten:</h2>
     <div id="responseArea">
         {% if response %}
             <p>{{ response }}</p>
         {% endif %}
     </div>
+    <h2>Artikel:</h2>
+    <div id="responseArea">
+        {% if artikel %}
+            <p>{{ artikel }}</p>
+        {% endif %}
+    </div>
 
     <div class="log-container">
         <h2>Log Entries:</h2>
-        <ul>
+        <ul id="log-list">
             {% for line in log_content %}
                 <li>{{ line }}</li>
             {% endfor %}
         </ul>
-    </div>
+    </div>  
+        
 </body>
 </html>

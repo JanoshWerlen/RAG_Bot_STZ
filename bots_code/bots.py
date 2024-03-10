@@ -9,6 +9,9 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 from datetime import datetime
 
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 chroma_db = None
 chroma_db_PR = None
 chroma_db_KAR = None
@@ -59,12 +62,7 @@ def initialise_AI():
     print(f"KAR {len(chunks_KAR)}")
     print(f"PR {len(chunks_PR)}")
 
-    # Load environment variables from .env file
-    load_dotenv()
-
-    # Access the API key using the variable name defined in the .env file
-    openai.api_key = os.getenv("OPENAI_API_KEY")
-
+ 
     # Initialize the OpenAI chat model
     print("initialise_llm")
     llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.8)
@@ -84,12 +82,27 @@ def create_timestamp():
 
 
 def create_log(timestamp, response):
+    from bots_code.chat import reduce_history
 
-    with open(response_file_path, "a", encoding="utf-8") as response_file:
-        response_file.write(f"//{timestamp} \n" + "Frage: " +
-                            response["query"] + "\n" + "Antwort: "+response["result"] + "\n")
+    #reduced_history = reduce_history(response)
+
+    try:
+        with open(response_file_path, "a", encoding="utf-8") as response_file:
+            response_file.write(f"//{timestamp} \n + {response['query']}\n + {response['result']}\n")
+    except Exception as e:
+        print(f"An error occurred while writing to the file: {e}")
 
     print("Response appended to", response_file_path)
+
+
+def clear_log():
+    with open(response_file_path, "w", encoding="utf-8") as response_file:
+        # Schreibe nichts in die Datei, um sie zu leeren
+        pass
+
+    print("Log-Datei geleert:", response_file_path)
+
+        
 
 
 def get_response(query: str, categorie):
@@ -105,7 +118,7 @@ def get_response(query: str, categorie):
         chain = RetrievalQA.from_chain_type(
         llm=llm, chain_type="stuff", retriever=chroma_db.as_retriever())
         response = chain.invoke(query)
-        print(response["result"])
+        #print(response["result"])
 
         formatted_date_time = create_timestamp()
 
@@ -118,7 +131,7 @@ def get_response(query: str, categorie):
         chain = RetrievalQA.from_chain_type(
             llm=llm, chain_type="stuff", retriever=chroma_db_PR.as_retriever())
         response = chain.invoke(query)
-        print(response["result"])
+        #print(response["result"])
 
         formatted_date_time = create_timestamp()
 
@@ -131,7 +144,7 @@ def get_response(query: str, categorie):
         chain = RetrievalQA.from_chain_type(
             llm=llm, chain_type="stuff", retriever=chroma_db_KAR.as_retriever())
         response = chain.invoke(query)
-        print(response["result"])
+        #print(response["result"])
 
         formatted_date_time = create_timestamp()
 
