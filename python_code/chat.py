@@ -19,9 +19,10 @@ def do_chat(query: str):
     context = get_response(query, "Alle")
 
     article_query = f"Auf welchem Artikel basiert folgende Anfrage?: + {context}. "
-    artikel_itself_query = f"Gib alle relevanten Artikel und die dazugehörigen Ursprünge im Format 'Artikel XYZ aus XYZ'an aus dem Text: {article_query}"
-
     article_based = get_response(article_query, "Alle")
+    artikel_itself_query = f"Gib alle relevanten Artikel und die dazugehörigen Ursprünge im Format 'Artikel XYZ aus XYZ'an aus dem Text: {article_based}"
+
+  
     artikel_itself = get_response(artikel_itself_query, "Alle")
 
     # reduced_history = reduce_history(history)
@@ -34,7 +35,7 @@ def do_chat(query: str):
     # print(f"\nreduced length {len(reduced_history)}\n")
     # print(f"\nreduced History {reduced_history}\n")
 
-    initial_query = f"Du bist ein HR Assistent und gibst Anworten auf Deutsch, basierend auf den Informationen: {context}"
+    initial_query = f"Du bist ein HR Assistent und gibst Anworten auf Deutsch, basierend auf den Informationen: {context}. Gib alle erwähnten Inhalte zurück. Verändere nicht die Bedeutung und interpretiere nie. "
 
     print(f"Initial Query: {initial_query} \n")
     try:
@@ -60,6 +61,11 @@ def do_chat(query: str):
 
     print(f"\nInitial Quarry Length: {len(initial_query)}\n")
     print(f"\Response Length: {len(response)}\n")
+
+    
+    response = context
+    artikel_itself = article_based
+
     return response, artikel_itself
 
 
